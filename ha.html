@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        body{
+            text-align: center;
+            background-color:#6600a8;
+        }
+        h1{
+            text-align: left;
+            display:inline-block;
+            width:280px;
+            height:330px;
+            background-color:#ffff77;
+            font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            margin:10px;
+            padding-top:50px;
+        }
+        #gure{
+            display:inline-block;
+            width:300px;
+            height:400px;
+            background-color:#66aa66;
+        }
+        .btn-circle-border-simple {
+            display: inline-block;
+            text-decoration: none;
+            color: #668ad8;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            border-radius: 50%;
+            border: solid 2px #668ad8;
+            text-align: center;
+            overflow: hidden;
+            font-weight: bold;
+            transition: .4s;
+        }
+
+        .btn-circle-border-simple:hover {
+            background: #b3e1ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <span id="gure">
+            <h1>
+                <p id="k1">{{ haiku[0].k }}</p>
+                <p id="n1">{{ haiku[0].n }}</p>
+                <p id="s1">{{ haiku[0].s }}</p>
+            </h1>
+        </span>
+        <span id="gure">
+            <h1>
+                <p id="k1">{{ haiku[1].k }}</p>
+                <p id="n1">{{ haiku[1].n }}</p>
+                <p id="s1">{{ haiku[1].s }}</p>
+            </h1>
+        </span>
+        <span id="gure">
+            <h1>
+                <p id="k1">{{ haiku[2].k }}</p>
+                <p id="n1">{{ haiku[2].n }}</p>
+                <p id="s1">{{ haiku[2].s }}</p>
+            </h1>
+        </span><br>
+        <input type="button" @click="makehaiku" value="生成">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
